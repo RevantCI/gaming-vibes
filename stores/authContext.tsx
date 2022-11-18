@@ -11,7 +11,7 @@ const AuthContext = createContext({
     authReady:false
 });
 export const AuthContextProvider =  ({children}:Props )=>{
-    const [user, setUser] = useState(null)
+    const [user, setUser] = useState<netlifyIdentity.User| null>(null)
     useEffect(() => {
         netlifyIdentity.on("login",(user)=>{
             setUser(user);
