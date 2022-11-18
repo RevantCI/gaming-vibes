@@ -1,5 +1,8 @@
 import { createContext, useState,useEffect } from "react";
+/* eslint-disable */
+// @ts-ignore
 import netlifyIdentity from "netlify-identity-widget"
+/* eslint-enable */
 interface Props {
     children: React.ReactNode
 }
